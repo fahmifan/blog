@@ -1,0 +1,15 @@
+.pages-container {
+  box-sizing: border-box;
+}
+
+@media (min-width: 320px) {
+  .pages-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .pages-container {
+    width: 700px;
+  }
+}
