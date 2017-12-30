@@ -8,14 +8,16 @@ import './index.css'
 const Header = () => (
   <div
     style={{
-      background: 'rebeccapurple',
+      background: '#159957',
+      background: '-webkit-linear-gradient(to right, #155799, #159957)',
+      background: 'linear-gradient(to right, #155799, #159957)',
       marginBottom: '1.45rem',
     }}
   >
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
+        maxWidth: 700,
         padding: '1.45rem 1.0875rem',
       }}
     >
@@ -47,7 +49,7 @@ const TemplateWrapper = ({ children }) => (
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
+        maxWidth: 700,
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
       }}

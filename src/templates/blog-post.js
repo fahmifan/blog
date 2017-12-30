@@ -1,12 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Aux from '../.../../hoc/Auxiliarys';
-import '../css/blog-post.css';
+import './blog-post.css';
 
 export default function Template({data}) {
   const { markdownRemark: post } = data;
   return (
-    <div className="blog-post-container">
+    <div className="bp-container">
       <Helmet title={ `Blog of Uneh - ${post.frontmatter.title}` } />
       <div className="blog-post">
         <h1>{ post.frontmatter.title }</h1>
