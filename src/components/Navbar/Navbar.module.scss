@@ -1,0 +1,76 @@
+.Navbar {
+  width: 100%;
+  margin: 0 auto; 
+  font-family: 'Open Sans', sans-serif;
+  background: #159957;
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  background: linear-gradient(to right, #155799, #159957);
+  ul {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    li {
+      box-sizing: border-box;
+      color: white;
+      padding: 10px;
+      margin-bottom: 0;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+        border-bottom: 5px solid #fff;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .BurgerIcon {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px; 
+    z-index: 100;
+  }
+  .Dispose {
+    display: none;
+  }
+}
+
+@media (min-width: 550px) {
+  .BurgerIcon {
+    display: none;
+  }
+  .Dispose {
+    display: unset;
+  }
+}
+
+@media (min-width: 740px) {
+  .Navbar {
+    ul {
+      width: 740px;
+    }
+  }
+}
+
+.sideMenu {
+  display: block !important;
+  font-size: 24px;
+  padding: 30px;
+  // padding-left: 20px;
+  text-align: center;
+  li {
+    color: black !important;
+    border-bottom: 0.5px solid #ccc;
+  }
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: unset;
+}

@@ -2,20 +2,22 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+import classes from './pages.module.scss';
+
 const IndexPage = ({data}) => {
   const {edges: posts} = data.allMarkdownRemark;
   return (
-    <div className="pages-container">
+    <div className={classes.pages}>
     {posts
       .filter(post => post.node.frontmatter.title.length > 0)
       .map( ({node: post}) => {
         return (
-          <div className="pages-container" key={post.id}>
+          <div key={post.id}>
             <h1>
               <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
             </h1>
             <h3>{post.frontmatter.date}</h3>
-            <p>{post.frontmatter.excerpt}</p>
+            <p>{post.excerpt}</p>
           </div>
         );
       })

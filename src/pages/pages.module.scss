@@ -1,0 +1,22 @@
+.pages {
+  box-sizing: border-box;
+  padding: 25px 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pages a {
+  color: #155898;
+}
+
+@media (min-width: 320px) {
+  .pages {
+    width: 100%;
+  }
+}
+
+@media (min-width: 740px) {
+  .pages {
+    width: 740px;
+  }
+}
