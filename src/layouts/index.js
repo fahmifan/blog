@@ -33,7 +33,7 @@ class TemplateWrapper extends Component {
     return (
       <div>
         <Helmet
-          title="Gatsby Default Starter"
+          title="fahmifan blog"
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
