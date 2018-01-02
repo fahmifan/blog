@@ -45,7 +45,7 @@ class TemplateWrapper extends Component {
         <Navbar 
           drawerClicked={this.drawerOpenHandler} 
           isOpen={this.state.drawerIsOpen}
-          menuClicked={this.drawerCloseHandler}/>
+        />
         {this.props.children()}
         <Footer />
       </div>
