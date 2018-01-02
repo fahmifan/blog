@@ -12,14 +12,14 @@ const navbar = (props) => (
     </span>
     <SideDrawer isOpen={props.isOpen}>
       <ul className={classes.sideMenu}>
-        <Navitem link="../">Home</Navitem>
-        <Navitem link="../about">About</Navitem>
+        <Navitem link="https://fahmifan.github.io">Home</Navitem>
+        <Navitem link="https://fahmifan.github.io/about">About</Navitem>
       </ul>
     </SideDrawer>
     <nav className={classes.Dispose}>
       <ul>
-        <Navitem link="../">Home</Navitem>
-        <Navitem link="../about">About</Navitem>
+      <Navitem link="https://fahmifan.github.io">Home</Navitem>
+      <Navitem link="https://fahmifan.github.io/about">About</Navitem>
       </ul>
     </nav>
   </div>
