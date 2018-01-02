@@ -10,6 +10,12 @@
   padding: 32px 16px;
   box-sizing: border-box;
   transition: transform 0.3s ease-out;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  span {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .Open {
@@ -17,5 +23,5 @@
 }
 
 .Close {
-  transform: translateX(-100%); 
+  transform: translateX(-105%); 
 }

@@ -4,12 +4,15 @@ import Navitem from './Navitem/Navitem';
 import BurgerIcon from '../BurgerIcon/BurgerIcon';
 import classes from './Navbar.module.scss';
 import SideDrawer from '../Sidedrawer/Sidedrawer';
+import Backbtn from '../BackButton/BackButton';
 
 const navbar = (props) => (
   <div className={classes.Navbar}>
-    <span onClick={props.drawerClicked} className={classes.BurgerIcon}>
-      <BurgerIcon/>
-    </span>
+    <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+      <span className={classes.BurgerIcon}>
+        <BurgerIcon clicked={props.drawerClicked} />
+      </span>
+    </div>
     <SideDrawer isOpen={props.isOpen}>
       <ul className={classes.sideMenu}>
         <Navitem link="https://fahmifan.github.io">Home</Navitem>

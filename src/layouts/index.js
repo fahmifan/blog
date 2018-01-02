@@ -6,8 +6,7 @@ import Media from 'react-media';
 
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
-import './index.css'
-import '../styles/layout-overide.scss';
+import './index.css';
 import BurgerIcon from '../components/BurgerIcon/BurgerIcon';
 import Sidedrawer from '../components/Sidedrawer/Sidedrawer';
 import Backdrop from '../components/Backdrop/Backdrop';

@@ -1,0 +1,23 @@
+.Backbtn {
+  box-sizing: border-box;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75px;
+  margin-right: 7px;
+  margin-top: 8px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 550px) {
+  .Backbtn {
+    margin: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}

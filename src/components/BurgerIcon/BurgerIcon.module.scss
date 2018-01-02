@@ -1,6 +1,9 @@
 .BurgerIcon {
   width: 35px;
   height: 35px;
+  &:hover {
+    cursor: pointer;
+  }
   div {
     box-sizing: border-box;
     width: 35px;

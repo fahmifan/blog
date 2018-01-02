@@ -10,7 +10,7 @@ const sideDrawer = (props) => {
   return (
     <span>
       <div className={assignClass.join(' ')}>
-        {props.children}
+        <span>{props.children}</span>
       </div>
     </span>
   );
