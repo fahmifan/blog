@@ -1,17 +1,24 @@
 .Navbar {
+  box-sizing: border-box;
   position: fixed;
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
+  height: 45px;
   font-family: 'Open Sans', sans-serif;
   background: #159957;
   background: -webkit-linear-gradient(to right, #155799, #159957);
   background: linear-gradient(to right, #155799, #159957);
+  align-content: center;
   ul {
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    justify-content: space-around;
+    img {
+      margin-right: 40px;
+    }
     li {
       box-sizing: border-box;
       color: white;
@@ -20,8 +27,19 @@
       &:hover {
         cursor: pointer;
         background-color: rgba($color: #fff, $alpha: 0.2);
-        border-bottom: 5px solid #fff;
+        border-bottom: 5px solid #155898;
       }
+    }
+    .logo {
+      color: white;
+      box-sizing: border-box;
+      position: relative;
+      display: hide;
+      top: 2px;
+      height: 40px;
+      // box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.23);      
+      border-radius: 5px;
+      padding: 2px;
     }
   }
 }
@@ -41,6 +59,13 @@
 }
 
 @media (min-width: 550px) {
+  .Navbar {
+    .ul {
+      .logo {
+        display: unset;
+      }
+    }
+  }
   .BurgerIcon {
     display: none;
   }

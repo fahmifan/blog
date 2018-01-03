@@ -5,6 +5,7 @@ import BurgerIcon from '../BurgerIcon/BurgerIcon';
 import classes from './Navbar.module.scss';
 import SideDrawer from '../Sidedrawer/Sidedrawer';
 import Backbtn from '../BackButton/BackButton';
+import logo from '../../assets/blog-logo.png';
 
 const navbar = (props) => (
   <div className={classes.Navbar}>
@@ -21,8 +22,11 @@ const navbar = (props) => (
     </SideDrawer>
     <nav className={classes.Dispose}>
       <ul>
-      <Navitem link="https://fahmifan.github.io">Home</Navitem>
-      <Navitem link="https://fahmifan.github.io/about">About</Navitem>
+        <Navitem link="https://fahmifan.github.io">Home</Navitem>
+        <Navitem link="https://fahmifan.github.io/about">About</Navitem>
+        {/*<p className={classes.logo}>fahmifan</p>*/}
+        {<img src={logo} alt="fahmifan" className={classes.logo} />}
+        {props.inContent ? <Backbtn /> : null}
       </ul>
     </nav>
   </div>

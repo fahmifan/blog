@@ -6,6 +6,20 @@
   padding-top: 70px;
 }
 
+.LogoNav {
+  box-sizing: border-box; 
+  position: fixed;
+  top: 5px;
+  left: 1%;
+  display: none
+}
+
+@media (min-width: 550px) {
+  .LogoNav {
+    display: unset;
+  }
+}
+
 @media (min-width: 740px) {
   .bpContainer {
     width: 740px;

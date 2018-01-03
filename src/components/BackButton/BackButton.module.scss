@@ -6,18 +6,15 @@
   padding: 5px 10px;
   position: fixed;
   top: 0;
-  right: 0;
+  right: 1%;
   width: 75px;
-  margin-right: 7px;
-  margin-top: 8px;
+  margin-top: 5px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 481px) {
   .Backbtn {
-    margin: 0;
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 4px;
   }
 }

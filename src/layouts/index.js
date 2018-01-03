@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 import Media from 'react-media';
 
 import Footer from '../components/Footer/Footer';
@@ -13,7 +13,8 @@ import Backdrop from '../components/Backdrop/Backdrop';
 
 class TemplateWrapper extends Component {
   state = {
-    drawerIsOpen: false 
+    drawerIsOpen: false,
+    isContentRead: false
   }
 
   drawerOpenHandler = () => {
